@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8C7B3D152CA4232900747A86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8C7B3D142CA4232900747A86 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8CF83D042C9C83DE00A7849C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C7B3D142CA4232900747A86 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8CF83CF02C9C83DB00A7849C /* SwiftTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF83D032C9C83DE00A7849C /* SwiftTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF83D0D2C9C83DE00A7849C /* SwiftTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +80,7 @@
 		8CF83CE72C9C83DB00A7849C = {
 			isa = PBXGroup;
 			children = (
+				8C7B3D142CA4232900747A86 /* README.md */,
 				8CF83CF22C9C83DB00A7849C /* SwiftTesting */,
 				8CF83D062C9C83DE00A7849C /* SwiftTestingTests */,
 				8CF83D102C9C83DE00A7849C /* SwiftTestingUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7B3D152CA4232900747A86 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
