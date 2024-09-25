@@ -86,5 +86,29 @@ struct WorkflowTest {
             #expect(awardWinningArtist.contains(artist))
             #expect(awardCount > 0)
         }
+        
+        struct WithCustomTestDescription {
+            struct Artist: CustomTestStringConvertible {
+                let name: String
+                let hasAwards: Bool
+                let isDevotional: Bool?
+                
+                var testDescription: String {
+                    "\(name)"
+                }
+            }
+            
+            @Test(
+                arguments: [
+                    Artist(name: "SPB", hasAwards: true, isDevotional: true),
+                    Artist(name: "Deva", hasAwards: true, isDevotional: true),
+                    Artist(name: "GV Prakash", hasAwards: true, isDevotional: nil)
+                ]
+            )
+            func isDevotionalArtist(_ artist: Artist) async throws {
+                #expect(artist.isDevotional == true)
+            }
+            
+        }
     }
 }
