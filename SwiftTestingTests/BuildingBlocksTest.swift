@@ -104,7 +104,7 @@ struct BuildingBlocksTest {
         
         @Test(
             "AR Rahman is the most liked Artist",
-            .tags(.composer)
+            .tags(.composer, .tagged)
         )
         func mostLikedArtistIaARR() async {
             #expect(mostLikedArtist == "AR Rahman")
@@ -154,6 +154,7 @@ struct BuildingBlocksTest {
 // MARK: - Support Details
 extension Tag {
     @Tag static var composer: Self
+    @Tag static var tagged: Self
 }
 
 enum CustomError: Error, Equatable {

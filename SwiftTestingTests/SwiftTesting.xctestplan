@@ -9,6 +9,11 @@
     }
   ],
   "defaultOptions" : {
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "-underSUT true"
+      }
+    ],
     "targetForVariableExpansion" : {
       "containerPath" : "container:SwiftTesting.xcodeproj",
       "identifier" : "8CF83CEF2C9C83DB00A7849C",
